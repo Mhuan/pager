@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pager</title>
+    <link rel="stylesheet" href="css/pager.css">
+</head>
+<body>
+
+<div class="pageBtnBox clearFloat">
+    <div>共 <span>888</span> 条，每 <span>10</span> 条/页</div>
+    <div class="numberBox clearFloat">
+        <div class="flipBtn cutBtn disable">&lt;</div>
+        <div class="flipBtn numberSign selNunumberSign firstSign" onclick='selNumberPage($(this))'>1</div>
+        <div class="flipBtn numberSign" onclick='selNumberPage($(this))'>2</div>
+        <div class="flipBtn numberSign" onclick='selNumberPage($(this))'>3</div>
+        <div class="flipBtn numberSign" onclick='selNumberPage($(this))'>4</div>
+        <div class="flipBtn ellipsisSign">...</div>
+        <div class="flipBtn numberSign lastSign" onclick='selNumberPage($(this))'>20</div>
+        <div class="flipBtn addBtn">&gt;</div>
+    </div>
+    <div class="pageInput">前往 <span><input type="text" value="1"/></span>页</div>
+    <div class="confirmBtn">确定</div>
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/pager.js"></script>
+</body>
+</html>
